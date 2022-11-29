@@ -1,0 +1,31 @@
+Continuous Improvement:
+
+1) Folder Layout should look like this:
+
+> data dump 
+	> plant 
+		> QV
+			> Sheets
+			> Cartons
+		> IG
+			> csv 1
+			> csv 2
+			> csv 3
+			> ...
+
+Goal is from now on, we'll use python to traverse Plant by plant...
+When it gets to CST, it'll load IG by 
+APPENDING EVERY CSV TOGETHER to make a master database
+
+Then when we create QV date dict, it will grab from the appropriate table when 74 is observed.
+
+qv_sheet_table = QV > Sheets
+qv_carton_table = QV > Cartons
+
+I just need to name the files correctly then we're good...
+
+
+2) What if I create a threshold bar...
+So there will be "tiers" of anomalies... Slicer for Threshold
+So instead of a simple "1" or "0", it'll be a threshold number...
+EACH LINE WILL BE A THRESHOLD! ... 
